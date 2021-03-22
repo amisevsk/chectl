@@ -27,8 +27,8 @@ const PLATFORM = process.env.PLATFORM || 'minikube'
 const INSTALLER = 'operator'
 
 const UPDATE_CHE_TIMEOUT_MS = 5 * 60 * 1000
-const WORKSPACE_START_TIMEOUT_MS = 5 * 60 * 1000
-const CHE_VERSION_TIMEOUT_MS = 50 * 1000
+const WORKSPACE_START_TIMEOUT_MS = 10 * 60 * 1000
+const CHE_VERSION_TIMEOUT_MS = 180 * 1000
 
 describe('Test Che upgrade', () => {
   let cheVersion: string
